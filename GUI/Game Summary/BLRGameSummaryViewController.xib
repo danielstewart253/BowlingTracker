@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BLRGameSummaryViewController">
+            <connections>
+                <outlet property="backButton" destination="UnW-Jx-Rue" id="rcv-Y9-6bJ"/>
+                <outlet property="contentView" destination="e4f-2V-0FP" id="hww-Q8-qxf"/>
+                <outlet property="endGameButton" destination="f4m-20-Mf8" id="G9g-zU-Aec"/>
+                <outlet property="pendantImage" destination="VC9-K5-exg" id="efu-ZH-zqk"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GameSummaryPendant.png" translatesAutoresizingMaskIntoConstraints="NO" id="VC9-K5-exg">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="88"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UnW-Jx-Rue" userLabel="Back Button" customClass="BLRButton">
+                    <rect key="frame" x="9" y="19" width="44" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <inset key="contentEdgeInsets" minX="8" minY="8" maxX="8" maxY="8"/>
+                    <state key="normal">
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="backButtonAction" destination="-1" eventType="touchUpInside" id="xEw-wX-MAE"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f4m-20-Mf8" userLabel="End Game Button" customClass="BLRButton">
+                    <rect key="frame" x="325" y="520" width="44" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="44" id="Ppw-pr-uNs"/>
+                        <constraint firstAttribute="height" constant="44" id="bwY-I3-RWh"/>
+                    </constraints>
+                    <inset key="contentEdgeInsets" minX="8" minY="8" maxX="8" maxY="8"/>
+                    <state key="normal">
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="endGameButtonAction" destination="-1" eventType="touchUpInside" id="rDb-VA-NPN"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e4f-2V-0FP" customClass="BLRBorderView">
+                    <rect key="frame" x="17" y="132" width="340" height="110"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="110" id="u2H-RX-zmo"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="14"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.6588235294117647" green="0.12941176470588234" blue="0.13725490196078433" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="VC9-K5-exg" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="88:568" id="0UR-76-JpR"/>
+                <constraint firstItem="e4f-2V-0FP" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="1Og-A6-vnc"/>
+                <constraint firstItem="VC9-K5-exg" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="9Cj-VI-EHY"/>
+                <constraint firstAttribute="trailing" secondItem="f4m-20-Mf8" secondAttribute="trailing" constant="6" id="DMW-Db-5e5"/>
+                <constraint firstAttribute="trailing" secondItem="VC9-K5-exg" secondAttribute="trailing" id="OFb-a2-0Wy"/>
+                <constraint firstAttribute="bottom" secondItem="f4m-20-Mf8" secondAttribute="bottom" constant="4" id="Tv3-JV-46n"/>
+                <constraint firstItem="VC9-K5-exg" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="ZVh-Sn-tL5"/>
+                <constraint firstItem="e4f-2V-0FP" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="340:375" id="gpR-Yb-Z9s"/>
+                <constraint firstItem="e4f-2V-0FP" firstAttribute="top" secondItem="VC9-K5-exg" secondAttribute="bottom" constant="44" id="nNv-se-xxC"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="178.5" y="348"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="GameSummaryPendant.png" width="640" height="174"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

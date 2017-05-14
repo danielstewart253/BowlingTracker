@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BLRLandscapeScorecardViewController">
+            <connections>
+                <outlet property="alleyLabel" destination="7Pe-ad-Q9E" id="15o-Cu-NMt"/>
+                <outlet property="contentView" destination="dfp-NK-8dt" id="fml-OO-14f"/>
+                <outlet property="dateLabel" destination="tHH-F7-qh0" id="QdC-AF-WmE"/>
+                <outlet property="shareButton" destination="Wlj-7n-R7q" id="5NO-n3-Usg"/>
+                <outlet property="view" destination="Hjy-nK-KDu" id="K5o-Er-4mE"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="Hjy-nK-KDu">
+            <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dfp-NK-8dt">
+                    <rect key="frame" x="18" y="83" width="629" height="272"/>
+                    <color key="backgroundColor" red="0.47450980390000003" green="0.76078431369999999" blue="0.67450980390000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="12"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.12549019610000001" green="0.55294117649999996" blue="0.54901960780000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ScorecardPendant.png" translatesAutoresizingMaskIntoConstraints="NO" id="4m3-uY-2EU" userLabel="Pendant">
+                    <rect key="frame" x="10" y="1" width="201" height="70"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tHH-F7-qh0">
+                    <rect key="frame" x="232" y="5" width="128" height="35"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="Njn-nR-4wc"/>
+                        <constraint firstAttribute="width" constant="128" id="VIt-8J-5oL"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <color key="textColor" red="0.12549019610000001" green="0.5568627451" blue="0.54901960780000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alley" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Pe-ad-Q9E">
+                    <rect key="frame" x="232" y="40" width="228" height="35"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="qVs-f3-QWU"/>
+                        <constraint firstAttribute="width" constant="228" id="xUj-Dy-gIG"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <color key="textColor" red="0.12549019610000001" green="0.5568627451" blue="0.54901960780000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wlj-7n-R7q">
+                    <rect key="frame" x="575" y="5" width="46" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="46" id="Ijo-WI-hgM"/>
+                        <constraint firstAttribute="height" constant="35" id="h8B-AI-HIM"/>
+                    </constraints>
+                    <state key="normal" image="ShareScorecardDark.png"/>
+                    <state key="highlighted" image="ShareScorecardHighlight.png"/>
+                    <connections>
+                        <action selector="shareScorecard" destination="-1" eventType="touchUpInside" id="r09-3Q-WUS"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.47450980390000003" green="0.76078431369999999" blue="0.67450980390000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="dfp-NK-8dt" firstAttribute="top" secondItem="4m3-uY-2EU" secondAttribute="bottom" constant="12" id="9ja-Zt-xtv"/>
+                <constraint firstAttribute="trailing" secondItem="dfp-NK-8dt" secondAttribute="trailing" constant="20" id="Hbu-Rc-F8J"/>
+                <constraint firstAttribute="trailing" secondItem="Wlj-7n-R7q" secondAttribute="trailing" constant="46" id="M1X-dI-d0e"/>
+                <constraint firstItem="tHH-F7-qh0" firstAttribute="top" secondItem="Hjy-nK-KDu" secondAttribute="top" constant="5" id="MdU-yb-ilQ"/>
+                <constraint firstItem="4m3-uY-2EU" firstAttribute="height" secondItem="Hjy-nK-KDu" secondAttribute="height" multiplier="70:375" priority="999" id="XUd-TX-VFN"/>
+                <constraint firstItem="7Pe-ad-Q9E" firstAttribute="top" secondItem="tHH-F7-qh0" secondAttribute="bottom" id="Xh5-Br-hVC"/>
+                <constraint firstItem="dfp-NK-8dt" firstAttribute="leading" secondItem="Hjy-nK-KDu" secondAttribute="leading" constant="18" id="Xud-HJ-xN9"/>
+                <constraint firstItem="dfp-NK-8dt" firstAttribute="height" secondItem="Hjy-nK-KDu" secondAttribute="height" multiplier="272:375" id="bFo-HJ-E77"/>
+                <constraint firstItem="Wlj-7n-R7q" firstAttribute="top" secondItem="Hjy-nK-KDu" secondAttribute="top" constant="5" id="gML-m8-BQX"/>
+                <constraint firstItem="4m3-uY-2EU" firstAttribute="width" secondItem="Hjy-nK-KDu" secondAttribute="width" multiplier="201:667" priority="999" id="jEC-iN-kcw"/>
+                <constraint firstAttribute="bottom" secondItem="dfp-NK-8dt" secondAttribute="bottom" constant="20" id="kO0-dF-lAp"/>
+                <constraint firstItem="4m3-uY-2EU" firstAttribute="leading" secondItem="Hjy-nK-KDu" secondAttribute="leading" constant="10" id="oje-Go-L3a"/>
+                <constraint firstItem="4m3-uY-2EU" firstAttribute="top" secondItem="Hjy-nK-KDu" secondAttribute="top" constant="1" id="qOv-5R-jL3"/>
+                <constraint firstItem="tHH-F7-qh0" firstAttribute="leading" secondItem="4m3-uY-2EU" secondAttribute="trailing" constant="21" id="tfa-EU-UZW"/>
+                <constraint firstItem="7Pe-ad-Q9E" firstAttribute="leading" secondItem="4m3-uY-2EU" secondAttribute="trailing" constant="21" id="wRh-mx-6Gl"/>
+            </constraints>
+            <point key="canvasLocation" x="305.5" y="170.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ScorecardPendant.png" width="289" height="121"/>
+        <image name="ShareScorecardDark.png" width="44" height="44"/>
+        <image name="ShareScorecardHighlight.png" width="44" height="44"/>
+    </resources>
+</document>

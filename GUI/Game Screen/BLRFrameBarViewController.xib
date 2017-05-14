@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BLRFrameBarViewController">
+            <connections>
+                <outlet property="currentFramePendant" destination="PJd-in-pRh" id="7nH-JF-6T1"/>
+                <outlet property="nextFramePendant" destination="ShW-NO-JSr" id="22Q-MT-iCo"/>
+                <outlet property="previousFramePendant" destination="0Xs-Df-PG0" id="XXg-4Y-ytg"/>
+                <outlet property="view" destination="mz0-5E-JrO" id="Lb5-ah-cmt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="mz0-5E-JrO">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="55"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uwv-Fx-mpk">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
+                    <color key="backgroundColor" red="0.23921568630000001" green="0.23921568630000001" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Frame1.png" translatesAutoresizingMaskIntoConstraints="NO" id="PJd-in-pRh" userLabel="CurrentFramePendant">
+                    <rect key="frame" x="114" y="-15" width="147" height="91"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="147" id="CPF-bG-LaP"/>
+                        <constraint firstAttribute="height" constant="91" id="FTZ-88-Cnq"/>
+                    </constraints>
+                </imageView>
+                <imageView hidden="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Frame2.png" translatesAutoresizingMaskIntoConstraints="NO" id="ShW-NO-JSr" userLabel="NextFramePendant">
+                    <rect key="frame" x="376" y="-15" width="147" height="91"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="147" id="KP7-Cp-jxY"/>
+                        <constraint firstAttribute="height" constant="91" id="beW-fx-FjD"/>
+                    </constraints>
+                </imageView>
+                <imageView hidden="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Frame1.png" translatesAutoresizingMaskIntoConstraints="NO" id="0Xs-Df-PG0" userLabel="PreviousFramePendant">
+                    <rect key="frame" x="-147" y="-15" width="147" height="91"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="91" id="2CA-n7-AnV"/>
+                        <constraint firstAttribute="width" constant="147" id="kQI-JF-0QZ"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="ShW-NO-JSr" secondAttribute="trailing" constant="-148" id="GXB-bY-ECu"/>
+                <constraint firstItem="0Xs-Df-PG0" firstAttribute="leading" secondItem="mz0-5E-JrO" secondAttribute="leading" constant="-147" id="JA9-KZ-DDK"/>
+                <constraint firstItem="PJd-in-pRh" firstAttribute="centerX" secondItem="mz0-5E-JrO" secondAttribute="centerX" id="MbP-S4-MCy"/>
+                <constraint firstItem="0Xs-Df-PG0" firstAttribute="top" secondItem="mz0-5E-JrO" secondAttribute="top" constant="-15" id="N9t-ak-mlW"/>
+                <constraint firstAttribute="trailing" secondItem="Uwv-Fx-mpk" secondAttribute="trailing" id="f67-1W-vZM"/>
+                <constraint firstItem="ShW-NO-JSr" firstAttribute="top" secondItem="mz0-5E-JrO" secondAttribute="top" constant="-15" id="gGB-Pb-uLo"/>
+                <constraint firstItem="PJd-in-pRh" firstAttribute="top" secondItem="mz0-5E-JrO" secondAttribute="top" constant="-15" id="gao-2Y-CZZ"/>
+                <constraint firstItem="Uwv-Fx-mpk" firstAttribute="height" secondItem="mz0-5E-JrO" secondAttribute="height" constant="-10" id="kkV-9K-bb8"/>
+                <constraint firstItem="Uwv-Fx-mpk" firstAttribute="top" secondItem="mz0-5E-JrO" secondAttribute="top" id="mmB-Pl-RoX"/>
+                <constraint firstItem="Uwv-Fx-mpk" firstAttribute="leading" secondItem="mz0-5E-JrO" secondAttribute="leading" id="xv2-Bh-fDJ"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="34" y="127.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Frame1.png" width="301" height="187"/>
+        <image name="Frame2.png" width="300" height="188"/>
+    </resources>
+</document>

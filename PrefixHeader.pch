@@ -1,0 +1,29 @@
+//
+//  PrefixHeader.pch
+//  Bowlr
+//
+//  Created by Daniel Stewart on 12/10/14.
+//  Copyright (c) 2014 Daniel Stewart. All rights reserved.
+//
+
+#ifndef Bowlr_PrefixHeader_pch
+#define Bowlr_PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif
+
+#ifdef __OBJC__
+#import "BLRConstants.h"
+#import "AppDelegate.h"
+#import "BLRGameManager.h"
+#import "BLRLogManager.h"
+#import "BLRHistoryManager.h"
+#import "UIColor+BLRColor.h"
+#import "UIView+UIViewToImage.h"
+#import "UIImage+BLRImage.h"
+#import "UIView+CALayer.h"
+#import "BLRPlayerHistoryRecord+Utils.h"
+#import "NSArray+Utils.h"
+#endif

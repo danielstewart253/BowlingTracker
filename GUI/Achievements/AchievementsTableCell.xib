@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="WGx-Nr-ZdF" customClass="AchievementsTableCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WGx-Nr-ZdF" id="eUv-Sp-TlN">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PEq-JQ-Qr7">
+                        <rect key="frame" x="10" y="2" width="207" height="21"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="207" id="DBg-8F-Ahg"/>
+                            <constraint firstAttribute="height" constant="21" id="jju-eA-tag"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="19"/>
+                        <color key="textColor" red="0.52941176470588236" green="0.3529411764705882" blue="0.14509803921568626" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="highlightedColor" red="1" green="0.81960784313725488" blue="0.53333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mO2-IW-j3K" userLabel="Date Label">
+                        <rect key="frame" x="10" y="23" width="200" height="21"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="200" id="el5-lp-g3j"/>
+                            <constraint firstAttribute="height" constant="21" id="rKh-Uc-V4c"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="12"/>
+                        <color key="textColor" red="0.52941176470588236" green="0.3529411764705882" blue="0.14509803921568626" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="highlightedColor" red="1" green="0.81960784313725488" blue="0.53333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nim-Nn-asR">
+                        <rect key="frame" x="20" y="40" width="269" height="21"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="c6S-Wb-BkU"/>
+                            <constraint firstAttribute="width" constant="269" id="rzQ-wt-sHB"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
+                        <color key="textColor" red="0.52941176470588236" green="0.3529411764705882" blue="0.14509803921568626" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="highlightedColor" red="1" green="0.81960784313725488" blue="0.53333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AchievementsTrophy.png" translatesAutoresizingMaskIntoConstraints="NO" id="dFs-of-553">
+                        <rect key="frame" x="254" y="7" width="23" height="28"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="23" id="1jM-4s-TlQ"/>
+                            <constraint firstAttribute="height" constant="28" id="fsd-xb-LZN"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ooH-wD-sBD" userLabel="Disclosure Content View">
+                        <rect key="frame" x="341" y="8" width="24" height="28"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="AchievementsCellDisclosureArrow.png" highlightedImage="AchievementsCellDisclosureArrowHighlighted.png" translatesAutoresizingMaskIntoConstraints="NO" id="yjR-wO-8dk" userLabel="Disclosure Arrow">
+                                <rect key="frame" x="0.0" y="0.0" width="24" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="24" id="jyD-Vp-XkF"/>
+                            <constraint firstAttribute="height" constant="28" id="ne8-bA-TtG"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="PEq-JQ-Qr7" firstAttribute="leading" secondItem="mO2-IW-j3K" secondAttribute="trailing" constant="-200" id="1SO-iJ-1sG"/>
+                    <constraint firstItem="nim-Nn-asR" firstAttribute="top" secondItem="mO2-IW-j3K" secondAttribute="bottom" constant="-4" id="7U0-2y-TWT"/>
+                    <constraint firstItem="nim-Nn-asR" firstAttribute="leading" secondItem="mO2-IW-j3K" secondAttribute="trailing" constant="-190" id="FQQ-Ib-O59"/>
+                    <constraint firstItem="dFs-of-553" firstAttribute="leading" secondItem="PEq-JQ-Qr7" secondAttribute="trailing" constant="37" id="XSG-aV-kDt"/>
+                    <constraint firstItem="mO2-IW-j3K" firstAttribute="top" secondItem="PEq-JQ-Qr7" secondAttribute="bottom" id="cE6-da-2id"/>
+                </constraints>
+            </tableViewCellContentView>
+            <constraints>
+                <constraint firstItem="dFs-of-553" firstAttribute="top" secondItem="WGx-Nr-ZdF" secondAttribute="top" constant="7" id="7p4-78-Wff"/>
+                <constraint firstItem="PEq-JQ-Qr7" firstAttribute="leading" secondItem="WGx-Nr-ZdF" secondAttribute="leading" constant="10" id="Bit-sL-71i"/>
+                <constraint firstItem="ooH-wD-sBD" firstAttribute="centerY" secondItem="WGx-Nr-ZdF" secondAttribute="centerY" id="Y5F-vB-rkO"/>
+                <constraint firstItem="PEq-JQ-Qr7" firstAttribute="top" secondItem="WGx-Nr-ZdF" secondAttribute="top" constant="2" id="YZW-MZ-VAJ"/>
+                <constraint firstAttribute="trailing" secondItem="ooH-wD-sBD" secondAttribute="trailing" constant="10" id="klk-To-uCc"/>
+            </constraints>
+            <connections>
+                <outlet property="dateLabel" destination="mO2-IW-j3K" id="JyR-HE-pXm"/>
+                <outlet property="descriptionLabel" destination="nim-Nn-asR" id="6WB-gn-M49"/>
+                <outlet property="disclosureArrow" destination="yjR-wO-8dk" id="1l8-J3-EQh"/>
+                <outlet property="disclosureContentView" destination="ooH-wD-sBD" id="hWl-db-gZe"/>
+                <outlet property="titleLabel" destination="PEq-JQ-Qr7" id="uLP-gd-Pjl"/>
+                <outlet property="trophyImage" destination="dFs-of-553" id="fhx-ar-i8J"/>
+            </connections>
+            <point key="canvasLocation" x="-16" y="59"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="AchievementsCellDisclosureArrow.png" width="13" height="19"/>
+        <image name="AchievementsCellDisclosureArrowHighlighted.png" width="13" height="19"/>
+        <image name="AchievementsTrophy.png" width="23" height="28"/>
+    </resources>
+</document>

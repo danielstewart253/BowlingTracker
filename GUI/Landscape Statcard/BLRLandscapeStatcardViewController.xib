@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BLRLandscapeStatcardViewController">
+            <connections>
+                <outlet property="conversionsContainer" destination="kE1-IQ-n0D" id="4hg-pd-fyr"/>
+                <outlet property="firstBallspeedContainer" destination="WfW-8d-z87" id="AGk-m1-1gc"/>
+                <outlet property="firstPinfallContainer" destination="mnT-M1-yIe" id="vb8-dL-2uh"/>
+                <outlet property="foulsContainer" destination="xjd-DI-CDe" id="8om-sx-gJn"/>
+                <outlet property="gamesContainer" destination="jBo-au-vaQ" id="sco-P8-Pik"/>
+                <outlet property="gutterContainer" destination="7aV-VO-uhF" id="1nh-Bu-Lzo"/>
+                <outlet property="highScoreContainer" destination="Ijp-bq-5Mb" id="1vR-oJ-BBu"/>
+                <outlet property="lossesContainer" destination="gC6-AI-Dej" id="uB5-2a-mHv"/>
+                <outlet property="lowScoreContainer" destination="2wM-gg-d1X" id="f4K-8K-tNe"/>
+                <outlet property="openFramesContainer" destination="dJ6-G7-WtB" id="Zat-IR-NXK"/>
+                <outlet property="pinfallContainer" destination="dQ8-Ld-gNE" id="cNM-cV-fk6"/>
+                <outlet property="scoreContainer" destination="4L6-uO-ODe" id="dvK-he-WEa"/>
+                <outlet property="secondBallspeedContainer" destination="0IC-0A-hMN" id="YE3-8m-3eX"/>
+                <outlet property="sparesContainer" destination="d1M-2y-g9O" id="Gsc-AM-TxB"/>
+                <outlet property="splitsContainer" destination="cm1-Qc-d7M" id="aOt-s6-7je"/>
+                <outlet property="strikesContainer" destination="RfV-4r-0pg" id="0m1-lg-o4W"/>
+                <outlet property="view" destination="Ytj-ch-QWC" id="Agr-PQ-l0P"/>
+                <outlet property="winsContainer" destination="dtK-48-Xp5" id="zpO-w8-byj"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="Ytj-ch-QWC">
+            <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K22-7Y-6zW" userLabel="Content View">
+                    <rect key="frame" x="25" y="25" width="617" height="325"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aas-Nl-eE3" userLabel="Midpoint Separator">
+                            <rect key="frame" x="308" y="0.0" width="1" height="325"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="1" id="bNI-NC-jbN"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dQ8-Ld-gNE" userLabel="Pinfall Container">
+                            <rect key="frame" x="20" y="73" width="288" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                        </view>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4L6-uO-ODe" userLabel="Score Container">
+                            <rect key="frame" x="20" y="103" width="288" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                        </view>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ijp-bq-5Mb" userLabel="High Score Container">
+                            <rect key="frame" x="20" y="133" width="288" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                        </view>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2wM-gg-d1X" userLabel="Low Score Container">
+                            <rect key="frame" x="20" y="163" width="288" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                        </view>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dJ6-G7-WtB" userLabel="Open Frames Container">
+                            <rect key="frame" x="20" y="193" width="288" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                        </view>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RfV-4r-0pg" userLabel="Strikes Container">
+                            <rect key="frame" x="20" y="223" width="288" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                        </view>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cm1-Qc-d7M" userLabel="Splits Container">
+                            <rect key="frame" x="20" y="283" width="288" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                        </view>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kE1-IQ-n0D" userLabel="Conversions Container">
+                            <rect key="frame" x="328" y="43" width="288" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                        </view>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7aV-VO-uhF" userLabel="Gutter Container">
+                            <rect key="frame" x="328" y="73" width="288" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                        </view>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xjd-DI-CDe" userLabel="Fouls Container">
+                            <rect key="frame" x="328" y="103" width="288" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                        </view>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mnT-M1-yIe" userLabel="1st Ball Container">
+                            <rect key="frame" x="328" y="133" width="288" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                        </view>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WfW-8d-z87" userLabel="1st Ballspeed Container">
+                            <rect key="frame" x="328" y="163" width="288" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                        </view>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0IC-0A-hMN" userLabel="2nd Ballspeed Container">
+                            <rect key="frame" x="328" y="193" width="288" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                        </view>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jBo-au-vaQ" userLabel="Games Container">
+                            <rect key="frame" x="328" y="223" width="288" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                        </view>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dtK-48-Xp5" userLabel="Wins Container">
+                            <rect key="frame" x="328" y="253" width="288" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                        </view>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gC6-AI-Dej" userLabel="Losses Container">
+                            <rect key="frame" x="328" y="283" width="288" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                        </view>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="d1M-2y-g9O" userLabel="Spares Container">
+                            <rect key="frame" x="20" y="253" width="288" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.64313725489999995" green="0.64313725489999995" blue="0.23137254900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="aas-Nl-eE3" firstAttribute="centerX" secondItem="K22-7Y-6zW" secondAttribute="centerX" id="BV0-Hc-Mdp"/>
+                        <constraint firstItem="aas-Nl-eE3" firstAttribute="top" secondItem="K22-7Y-6zW" secondAttribute="top" id="nYG-hf-DlK"/>
+                        <constraint firstItem="aas-Nl-eE3" firstAttribute="height" secondItem="K22-7Y-6zW" secondAttribute="height" id="uyc-tp-XNk"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="12"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.39607843139999999" green="0.49803921569999998" blue="0.23137254900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="StatcardLandscapePendantTitle.png" translatesAutoresizingMaskIntoConstraints="NO" id="lht-r1-Q13" userLabel="Pendant">
+                    <rect key="frame" x="0.0" y="-7" width="138" height="100"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="0.64313725489999995" green="0.64313725489999995" blue="0.23137254900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="K22-7Y-6zW" firstAttribute="top" secondItem="Ytj-ch-QWC" secondAttribute="top" constant="25" id="980-06-PCh"/>
+                <constraint firstItem="lht-r1-Q13" firstAttribute="width" secondItem="Ytj-ch-QWC" secondAttribute="width" multiplier="138:667" id="GyD-LM-Alc"/>
+                <constraint firstAttribute="bottom" secondItem="K22-7Y-6zW" secondAttribute="bottom" constant="25" id="RZC-gb-ZsN"/>
+                <constraint firstAttribute="trailing" secondItem="K22-7Y-6zW" secondAttribute="trailing" constant="25" id="S3d-Eb-tkG"/>
+                <constraint firstItem="lht-r1-Q13" firstAttribute="leading" secondItem="Ytj-ch-QWC" secondAttribute="leading" id="SQd-uy-K5W"/>
+                <constraint firstItem="lht-r1-Q13" firstAttribute="height" secondItem="Ytj-ch-QWC" secondAttribute="height" multiplier="100:375" id="fX1-Yc-9zd"/>
+                <constraint firstItem="K22-7Y-6zW" firstAttribute="leading" secondItem="Ytj-ch-QWC" secondAttribute="leading" constant="25" id="hYa-be-BRn"/>
+                <constraint firstItem="lht-r1-Q13" firstAttribute="top" secondItem="Ytj-ch-QWC" secondAttribute="top" constant="-7" id="hgZ-C7-las"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <point key="canvasLocation" x="212.5" y="351.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="StatcardLandscapePendantTitle.png" width="137" height="88"/>
+    </resources>
+</document>

@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BLRNumberPadViewController">
+            <connections>
+                <outlet property="numberPad10Button" destination="qHf-7g-ggX" id="wGN-Oc-YQN"/>
+                <outlet property="numberPad1Button" destination="de7-Xh-lxu" id="Xdj-6L-6Dg"/>
+                <outlet property="numberPad2Button" destination="B4x-3L-KDO" id="IpX-u3-we4"/>
+                <outlet property="numberPad3Button" destination="F10-de-ZIh" id="i7O-Je-W2h"/>
+                <outlet property="numberPad4Button" destination="oCi-11-N92" id="ckf-V6-qie"/>
+                <outlet property="numberPad5Button" destination="giD-fx-DCY" id="JCp-b9-Tl8"/>
+                <outlet property="numberPad6Button" destination="Sh1-vB-uA3" id="hhV-9s-E3k"/>
+                <outlet property="numberPad7Button" destination="jMm-zL-8yp" id="p1a-Le-a5p"/>
+                <outlet property="numberPad8Button" destination="ilY-Rh-Hlw" id="aq4-rU-GdO"/>
+                <outlet property="numberPad9Button" destination="GLT-Q7-uLr" id="Ad5-8W-Eis"/>
+                <outlet property="pinButton" destination="YvR-dT-XWQ" id="ecE-wE-ZC3"/>
+                <outlet property="view" destination="uRb-cw-Xwc" id="0kT-j7-rj5"/>
+                <outletCollection property="numberPadButtons" destination="de7-Xh-lxu" id="tKk-Kc-uev"/>
+                <outletCollection property="numberPadButtons" destination="B4x-3L-KDO" id="kqS-Gg-f8f"/>
+                <outletCollection property="numberPadButtons" destination="F10-de-ZIh" id="Wdf-aR-ggx"/>
+                <outletCollection property="numberPadButtons" destination="oCi-11-N92" id="n17-Eh-t6m"/>
+                <outletCollection property="numberPadButtons" destination="giD-fx-DCY" id="O5Y-R4-OCc"/>
+                <outletCollection property="numberPadButtons" destination="Sh1-vB-uA3" id="4bO-6B-xMp"/>
+                <outletCollection property="numberPadButtons" destination="jMm-zL-8yp" id="1B2-wl-hKD"/>
+                <outletCollection property="numberPadButtons" destination="ilY-Rh-Hlw" id="WoJ-lg-4if"/>
+                <outletCollection property="numberPadButtons" destination="GLT-Q7-uLr" id="ZgM-kq-Ebh"/>
+                <outletCollection property="numberPadButtons" destination="qHf-7g-ggX" id="v6t-PJ-Fgh"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="uRb-cw-Xwc">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="416"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ctD-si-0iz" userLabel="Content View">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="416"/>
+                    <subviews>
+                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="de7-Xh-lxu" userLabel="NumberPad 1">
+                            <rect key="frame" x="65" y="44" width="76" height="76"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="76" id="4Gu-Ob-8D7"/>
+                                <constraint firstAttribute="height" constant="76" id="H9E-pS-ZsG"/>
+                            </constraints>
+                            <state key="normal" image="1at49pct.png">
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="selected" image="1at100pct.png"/>
+                            <connections>
+                                <action selector="numberPadButtonAction:" destination="-1" eventType="touchUpInside" id="Ndz-oe-GL1"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B4x-3L-KDO" userLabel="NumberPad 2">
+                            <rect key="frame" x="149" y="44" width="76" height="76"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="76" id="M6E-d8-3Du"/>
+                                <constraint firstAttribute="height" constant="76" id="gIQ-xq-y0I"/>
+                            </constraints>
+                            <state key="normal" image="2at49pct.png">
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="selected" image="2at100pct.png"/>
+                            <connections>
+                                <action selector="numberPadButtonAction:" destination="-1" eventType="touchUpInside" id="lAe-C9-VKu"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F10-de-ZIh" userLabel="NumberPad 3">
+                            <rect key="frame" x="233" y="44" width="76" height="76"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="76" id="5LQ-JN-0ga"/>
+                                <constraint firstAttribute="width" constant="76" id="cqh-yL-uy8"/>
+                            </constraints>
+                            <state key="normal" image="3at49pct.png">
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="selected" image="3at100pct.png"/>
+                            <connections>
+                                <action selector="numberPadButtonAction:" destination="-1" eventType="touchUpInside" id="goS-Pz-AEY"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oCi-11-N92" userLabel="NumberPad 4">
+                            <rect key="frame" x="65" y="128" width="76" height="76"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="76" id="9r2-Hk-q04"/>
+                                <constraint firstAttribute="width" constant="76" id="Z3u-d8-Al2"/>
+                            </constraints>
+                            <state key="normal" image="4at49pct.png">
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="selected" image="4at100pct.png"/>
+                            <connections>
+                                <action selector="numberPadButtonAction:" destination="-1" eventType="touchUpInside" id="oE8-Qm-TLF"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="giD-fx-DCY" userLabel="NumberPad 5">
+                            <rect key="frame" x="149" y="128" width="76" height="76"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="76" id="OCk-7a-lgt"/>
+                                <constraint firstAttribute="width" constant="76" id="nn6-9P-pNs"/>
+                            </constraints>
+                            <state key="normal" image="5at49pct.png">
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="selected" image="5at100pct.png"/>
+                            <connections>
+                                <action selector="numberPadButtonAction:" destination="-1" eventType="touchUpInside" id="j5H-bH-dl1"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sh1-vB-uA3" userLabel="NumberPad 6">
+                            <rect key="frame" x="233" y="128" width="76" height="76"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="76" id="TCO-TY-F8d"/>
+                                <constraint firstAttribute="width" constant="76" id="kVF-ee-n0v"/>
+                            </constraints>
+                            <state key="normal" image="6at49pct.png">
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="selected" image="6at100pct.png"/>
+                            <connections>
+                                <action selector="numberPadButtonAction:" destination="-1" eventType="touchUpInside" id="jCo-qP-c8w"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I4y-7H-ljE" userLabel="Buffer">
+                            <rect key="frame" x="0.0" y="204" width="375" height="8"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="375" id="6Hu-4V-3XF"/>
+                                <constraint firstAttribute="height" constant="8" id="kJf-Tg-qh0"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jMm-zL-8yp" userLabel="NumberPad 7">
+                            <rect key="frame" x="65" y="212" width="76" height="76"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="76" id="86Y-0u-JYY"/>
+                                <constraint firstAttribute="width" constant="76" id="osq-Ju-X0U"/>
+                            </constraints>
+                            <state key="normal" image="7at49pct.png">
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="selected" image="7at100pct.png"/>
+                            <connections>
+                                <action selector="numberPadButtonAction:" destination="-1" eventType="touchUpInside" id="Boz-IH-XjA"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ilY-Rh-Hlw" userLabel="NumberPad 8">
+                            <rect key="frame" x="149" y="212" width="76" height="76"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="76" id="3qa-i4-ct3"/>
+                                <constraint firstAttribute="height" constant="76" id="BNz-f8-9Z0"/>
+                            </constraints>
+                            <state key="normal" image="8at49pct.png">
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="selected" image="8at100pct.png"/>
+                            <connections>
+                                <action selector="numberPadButtonAction:" destination="-1" eventType="touchUpInside" id="U0k-zL-P0a"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GLT-Q7-uLr" userLabel="NumberPad 9">
+                            <rect key="frame" x="233" y="212" width="76" height="76"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="76" id="Lld-K7-cYA"/>
+                                <constraint firstAttribute="width" constant="76" id="aTq-mc-wEx"/>
+                            </constraints>
+                            <state key="normal" image="9at49pct.png">
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="selected" image="9at100pct.png"/>
+                            <connections>
+                                <action selector="numberPadButtonAction:" destination="-1" eventType="touchUpInside" id="sjT-1X-Ibr"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qHf-7g-ggX" userLabel="NumberPad 10">
+                            <rect key="frame" x="149" y="296" width="76" height="76"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="76" id="cRi-TR-VKT"/>
+                                <constraint firstAttribute="height" constant="76" id="ckv-Um-Nok"/>
+                            </constraints>
+                            <state key="normal" image="10at49pct.png">
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="selected" image="10at100pct.png"/>
+                            <connections>
+                                <action selector="numberPadButtonAction:" destination="-1" eventType="touchUpInside" id="ukj-ai-WQU"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="giD-fx-DCY" firstAttribute="leading" secondItem="oCi-11-N92" secondAttribute="trailing" constant="8" id="2pI-aw-Rj4"/>
+                        <constraint firstItem="giD-fx-DCY" firstAttribute="centerX" secondItem="ctD-si-0iz" secondAttribute="centerX" id="6YX-Jv-Jut"/>
+                        <constraint firstItem="qHf-7g-ggX" firstAttribute="centerX" secondItem="ctD-si-0iz" secondAttribute="centerX" id="9Z1-0D-bYn"/>
+                        <constraint firstItem="ilY-Rh-Hlw" firstAttribute="top" secondItem="I4y-7H-ljE" secondAttribute="bottom" id="A6q-eg-T3V"/>
+                        <constraint firstItem="GLT-Q7-uLr" firstAttribute="top" secondItem="I4y-7H-ljE" secondAttribute="bottom" id="ANR-Sk-wX3"/>
+                        <constraint firstItem="I4y-7H-ljE" firstAttribute="leading" secondItem="ctD-si-0iz" secondAttribute="leading" id="DQD-DK-QAX"/>
+                        <constraint firstItem="Sh1-vB-uA3" firstAttribute="leading" secondItem="giD-fx-DCY" secondAttribute="trailing" constant="8" id="Grc-eC-GRm"/>
+                        <constraint firstItem="ilY-Rh-Hlw" firstAttribute="centerX" secondItem="ctD-si-0iz" secondAttribute="centerX" id="GuJ-2S-s8i"/>
+                        <constraint firstAttribute="width" constant="375" id="IfK-0N-0l4"/>
+                        <constraint firstItem="qHf-7g-ggX" firstAttribute="top" secondItem="GLT-Q7-uLr" secondAttribute="bottom" constant="8" id="Ikl-CG-WVC"/>
+                        <constraint firstItem="Sh1-vB-uA3" firstAttribute="top" secondItem="F10-de-ZIh" secondAttribute="bottom" constant="8" id="Imw-Qo-vFA"/>
+                        <constraint firstItem="oCi-11-N92" firstAttribute="top" secondItem="de7-Xh-lxu" secondAttribute="bottom" constant="8" id="Jn4-nV-2XB"/>
+                        <constraint firstItem="qHf-7g-ggX" firstAttribute="top" secondItem="jMm-zL-8yp" secondAttribute="bottom" constant="8" id="MHL-uP-84q"/>
+                        <constraint firstItem="giD-fx-DCY" firstAttribute="top" secondItem="B4x-3L-KDO" secondAttribute="bottom" constant="8" id="OXA-7Z-lEm"/>
+                        <constraint firstItem="jMm-zL-8yp" firstAttribute="top" secondItem="I4y-7H-ljE" secondAttribute="bottom" id="Pzi-jI-ruA"/>
+                        <constraint firstItem="I4y-7H-ljE" firstAttribute="top" secondItem="giD-fx-DCY" secondAttribute="bottom" id="SfV-sV-XMX"/>
+                        <constraint firstAttribute="trailing" secondItem="I4y-7H-ljE" secondAttribute="trailing" id="WUB-qG-f4n"/>
+                        <constraint firstItem="I4y-7H-ljE" firstAttribute="top" secondItem="Sh1-vB-uA3" secondAttribute="bottom" id="XY8-D4-EWe"/>
+                        <constraint firstItem="I4y-7H-ljE" firstAttribute="centerY" secondItem="ctD-si-0iz" secondAttribute="centerY" id="YqA-Dd-GFX"/>
+                        <constraint firstItem="I4y-7H-ljE" firstAttribute="centerX" secondItem="ctD-si-0iz" secondAttribute="centerX" id="eIr-I7-maf"/>
+                        <constraint firstItem="GLT-Q7-uLr" firstAttribute="leading" secondItem="ilY-Rh-Hlw" secondAttribute="trailing" constant="8" id="fLT-N1-x9K"/>
+                        <constraint firstItem="ilY-Rh-Hlw" firstAttribute="leading" secondItem="jMm-zL-8yp" secondAttribute="trailing" constant="8" id="fsz-Li-sp7"/>
+                        <constraint firstItem="F10-de-ZIh" firstAttribute="leading" secondItem="B4x-3L-KDO" secondAttribute="trailing" constant="8" id="gbD-3s-si0"/>
+                        <constraint firstItem="B4x-3L-KDO" firstAttribute="leading" secondItem="de7-Xh-lxu" secondAttribute="trailing" constant="8" id="jgf-XL-AL9"/>
+                        <constraint firstItem="B4x-3L-KDO" firstAttribute="centerX" secondItem="ctD-si-0iz" secondAttribute="centerX" id="nmi-fK-A4E"/>
+                        <constraint firstItem="I4y-7H-ljE" firstAttribute="top" secondItem="oCi-11-N92" secondAttribute="bottom" id="pY8-G5-NFH"/>
+                        <constraint firstAttribute="height" constant="416" id="vdE-fz-jOR"/>
+                        <constraint firstItem="qHf-7g-ggX" firstAttribute="top" secondItem="ilY-Rh-Hlw" secondAttribute="bottom" constant="8" id="yCi-MC-QJ1"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YvR-dT-XWQ" userLabel="Pin Mode Button">
+                    <rect key="frame" x="324" y="346" width="44" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="ZE8-Ex-DMz"/>
+                        <constraint firstAttribute="width" constant="44" id="m4K-og-3ll"/>
+                    </constraints>
+                    <state key="normal" image="PinScreenButtonDark.png">
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <state key="highlighted" image="PinScreenButtonHighlight.png"/>
+                    <connections>
+                        <action selector="pinButtonAction" destination="-1" eventType="touchUpInside" id="zee-P5-Hrd"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ctD-si-0iz" firstAttribute="leading" secondItem="uRb-cw-Xwc" secondAttribute="leading" id="4d9-Gc-y9C"/>
+                <constraint firstAttribute="bottom" secondItem="YvR-dT-XWQ" secondAttribute="bottom" constant="26" id="AyZ-5W-6Md"/>
+                <constraint firstAttribute="trailing" secondItem="YvR-dT-XWQ" secondAttribute="trailing" constant="7" id="F8x-po-Hfa"/>
+                <constraint firstItem="ctD-si-0iz" firstAttribute="top" secondItem="uRb-cw-Xwc" secondAttribute="top" id="FO8-Tt-kNS"/>
+                <constraint firstItem="ctD-si-0iz" firstAttribute="centerX" secondItem="uRb-cw-Xwc" secondAttribute="centerX" id="No0-2W-3dz"/>
+                <constraint firstAttribute="bottom" secondItem="ctD-si-0iz" secondAttribute="bottom" id="PBX-Xm-wbG"/>
+                <constraint firstAttribute="trailing" secondItem="ctD-si-0iz" secondAttribute="trailing" id="Seo-Re-k02"/>
+                <constraint firstItem="ctD-si-0iz" firstAttribute="centerY" secondItem="uRb-cw-Xwc" secondAttribute="centerY" id="sE6-8h-jPp"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="10at100pct.png" width="154" height="154"/>
+        <image name="10at49pct.png" width="130" height="131"/>
+        <image name="1at100pct.png" width="154" height="154"/>
+        <image name="1at49pct.png" width="131" height="131"/>
+        <image name="2at100pct.png" width="154" height="154"/>
+        <image name="2at49pct.png" width="130" height="131"/>
+        <image name="3at100pct.png" width="154" height="154"/>
+        <image name="3at49pct.png" width="131" height="131"/>
+        <image name="4at100pct.png" width="154" height="154"/>
+        <image name="4at49pct.png" width="131" height="131"/>
+        <image name="5at100pct.png" width="154" height="154"/>
+        <image name="5at49pct.png" width="130" height="131"/>
+        <image name="6at100pct.png" width="154" height="154"/>
+        <image name="6at49pct.png" width="131" height="131"/>
+        <image name="7at100pct.png" width="154" height="154"/>
+        <image name="7at49pct.png" width="131" height="131"/>
+        <image name="8at100pct.png" width="154" height="154"/>
+        <image name="8at49pct.png" width="130" height="131"/>
+        <image name="9at100pct.png" width="154" height="154"/>
+        <image name="9at49pct.png" width="131" height="131"/>
+        <image name="PinScreenButtonDark.png" width="88" height="88"/>
+        <image name="PinScreenButtonHighlight.png" width="88" height="88"/>
+    </resources>
+</document>

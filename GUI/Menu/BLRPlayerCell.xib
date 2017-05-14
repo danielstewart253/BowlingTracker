@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BLRPlayerCell" id="Jgk-B9-JzZ" userLabel="PlayerCell" customClass="BLRPlayerCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Jgk-B9-JzZ" id="YN2-U9-Vu1">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="39.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rDq-IA-YxV" userLabel="Edit Button">
+                        <rect key="frame" x="-40" y="0.0" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="klV-en-MZ2"/>
+                        </constraints>
+                        <state key="normal" image="MenuCellMinus.png"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4XX-Ro-Tm1" userLabel="Player Label">
+                        <rect key="frame" x="10" y="0.0" width="310" height="40"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.19215686269999999" green="0.1960784314" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="highlightedColor" red="0.19215686274509802" green="0.19607843137254902" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </label>
+                    <textField hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TRU-cc-K89" customClass="BLRMenuTextField">
+                        <rect key="frame" x="10" y="0.0" width="310" height="40"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
+                    </textField>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JWL-lU-aBw" userLabel="Delete Button">
+                        <rect key="frame" x="320" y="0.0" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="MOz-zC-NYZ"/>
+                        </constraints>
+                        <state key="normal" image="DeleteCellStartMenu.png"/>
+                        <state key="highlighted" backgroundImage="DeleteCellStartMenu.png"/>
+                    </button>
+                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MenuMoveButton.png" translatesAutoresizingMaskIntoConstraints="NO" id="jrv-jF-API" userLabel="Accessory Image">
+                        <rect key="frame" x="280" y="0.0" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="GQE-7S-2ss"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+            </tableViewCellContentView>
+            <constraints>
+                <constraint firstItem="rDq-IA-YxV" firstAttribute="trailing" secondItem="Jgk-B9-JzZ" secondAttribute="leading" id="2GP-l7-M2s"/>
+                <constraint firstAttribute="trailing" secondItem="jrv-jF-API" secondAttribute="trailing" id="3iX-2w-sjs"/>
+                <constraint firstAttribute="trailing" secondItem="TRU-cc-K89" secondAttribute="trailing" id="42R-EP-MW8"/>
+                <constraint firstItem="JWL-lU-aBw" firstAttribute="height" secondItem="Jgk-B9-JzZ" secondAttribute="height" id="5Gd-XO-5T5"/>
+                <constraint firstItem="rDq-IA-YxV" firstAttribute="top" secondItem="Jgk-B9-JzZ" secondAttribute="top" id="65i-Ty-IY2"/>
+                <constraint firstItem="4XX-Ro-Tm1" firstAttribute="top" secondItem="Jgk-B9-JzZ" secondAttribute="top" id="7FG-Z6-uWz"/>
+                <constraint firstItem="jrv-jF-API" firstAttribute="height" secondItem="Jgk-B9-JzZ" secondAttribute="height" id="DKy-DA-QuA"/>
+                <constraint firstItem="TRU-cc-K89" firstAttribute="height" secondItem="Jgk-B9-JzZ" secondAttribute="height" id="HpX-bm-Hyn"/>
+                <constraint firstItem="rDq-IA-YxV" firstAttribute="height" secondItem="Jgk-B9-JzZ" secondAttribute="height" id="IoU-B4-sn8"/>
+                <constraint firstItem="jrv-jF-API" firstAttribute="top" secondItem="Jgk-B9-JzZ" secondAttribute="top" id="Irx-1E-77g"/>
+                <constraint firstItem="JWL-lU-aBw" firstAttribute="top" secondItem="Jgk-B9-JzZ" secondAttribute="top" id="JRB-gg-Fhv"/>
+                <constraint firstAttribute="trailing" secondItem="4XX-Ro-Tm1" secondAttribute="trailing" id="JY4-tf-HcI"/>
+                <constraint firstItem="TRU-cc-K89" firstAttribute="top" secondItem="Jgk-B9-JzZ" secondAttribute="top" id="Yod-tL-qb3"/>
+                <constraint firstItem="4XX-Ro-Tm1" firstAttribute="height" secondItem="Jgk-B9-JzZ" secondAttribute="height" id="lS1-yC-fmx"/>
+                <constraint firstAttribute="trailing" secondItem="JWL-lU-aBw" secondAttribute="leading" id="o78-4x-x5A"/>
+                <constraint firstItem="TRU-cc-K89" firstAttribute="leading" secondItem="Jgk-B9-JzZ" secondAttribute="leading" constant="10" id="pwL-eP-JxF"/>
+                <constraint firstItem="4XX-Ro-Tm1" firstAttribute="leading" secondItem="Jgk-B9-JzZ" secondAttribute="leading" constant="10" id="tTO-YE-slw"/>
+            </constraints>
+            <connections>
+                <outlet property="accessoryImage" destination="jrv-jF-API" id="FPZ-dz-f3A"/>
+                <outlet property="deleteButton" destination="JWL-lU-aBw" id="W1Q-SB-DP3"/>
+                <outlet property="editButton" destination="rDq-IA-YxV" id="4gp-2U-6b0"/>
+                <outlet property="editButtonContraint" destination="2GP-l7-M2s" id="Ste-ng-TxR"/>
+                <outlet property="label" destination="4XX-Ro-Tm1" id="dfn-JA-RtQ"/>
+                <outlet property="labelConstraint" destination="tTO-YE-slw" id="wTC-5T-3MD"/>
+                <outlet property="textField" destination="TRU-cc-K89" id="yby-n6-pOD"/>
+                <outlet property="textFieldConstraint" destination="pwL-eP-JxF" id="1xR-g1-JrH"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="DeleteCellStartMenu.png" width="88" height="88"/>
+        <image name="MenuCellMinus.png" width="88" height="88"/>
+        <image name="MenuMoveButton.png" width="88" height="88"/>
+    </resources>
+</document>

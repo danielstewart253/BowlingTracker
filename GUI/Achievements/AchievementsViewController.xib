@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AchievementsViewController">
+            <connections>
+                <outlet property="achievementTable" destination="7Sg-s4-YvF" id="56m-RX-I8m"/>
+                <outlet property="backButton" destination="W8R-lz-XXX" id="R92-bM-kud"/>
+                <outlet property="backgroundImage" destination="kas-Eg-E93" id="xid-9E-dQT"/>
+                <outlet property="resumeGameButton" destination="JFn-qA-t3V" id="VY9-09-Xlw"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="329" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AchievementsBackground.png" translatesAutoresizingMaskIntoConstraints="NO" id="kas-Eg-E93">
+                    <rect key="frame" x="0.0" y="0.0" width="329" height="600"/>
+                </imageView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="7Sg-s4-YvF">
+                    <rect key="frame" x="0.0" y="131" width="329" height="417"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="cHi-aq-mWF"/>
+                        <outlet property="delegate" destination="-1" id="O5g-La-SGc"/>
+                    </connections>
+                </tableView>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JFn-qA-t3V">
+                    <rect key="frame" x="285" y="556" width="44" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="44" id="7sK-sS-aVZ"/>
+                        <constraint firstAttribute="height" constant="44" id="Pjr-AV-gn3"/>
+                    </constraints>
+                    <state key="normal" image="AchievementsResumeGameButtonDark.png">
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <state key="highlighted" image="AchievementsResumeGameButtonHighlighted.png"/>
+                    <connections>
+                        <action selector="resumeGameButtonAction" destination="-1" eventType="touchUpInside" id="AQl-l4-O1y"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W8R-lz-XXX">
+                    <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="44" id="6LE-cb-bmi"/>
+                        <constraint firstAttribute="height" constant="44" id="TlC-Tb-YJk"/>
+                    </constraints>
+                    <state key="normal" image="AchievementsBackButton.png">
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <state key="highlighted" image="AchievementsBackButtonHighlighted.png"/>
+                    <connections>
+                        <action selector="backButtonAction" destination="-1" eventType="touchUpInside" id="PsT-fX-Jyw"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="kas-Eg-E93" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="0mS-eL-rjW"/>
+                <constraint firstItem="JFn-qA-t3V" firstAttribute="top" secondItem="7Sg-s4-YvF" secondAttribute="bottom" constant="8" id="3Se-2c-gEE"/>
+                <constraint firstAttribute="trailing" secondItem="JFn-qA-t3V" secondAttribute="trailing" id="5kX-ew-eIw"/>
+                <constraint firstItem="W8R-lz-XXX" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="9FN-iS-5tk"/>
+                <constraint firstItem="kas-Eg-E93" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="9rs-mN-HjR"/>
+                <constraint firstItem="7Sg-s4-YvF" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="I1X-Ln-PHx"/>
+                <constraint firstItem="W8R-lz-XXX" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="LCK-qR-t23"/>
+                <constraint firstItem="kas-Eg-E93" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" id="T5v-Ze-llb"/>
+                <constraint firstItem="7Sg-s4-YvF" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ZTE-12-7HB"/>
+                <constraint firstAttribute="bottom" secondItem="JFn-qA-t3V" secondAttribute="bottom" id="oy2-rc-n3c"/>
+                <constraint firstItem="kas-Eg-E93" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="xJd-xd-qCc"/>
+                <constraint firstItem="7Sg-s4-YvF" firstAttribute="top" secondItem="W8R-lz-XXX" secondAttribute="bottom" constant="87" id="xbL-zH-XMO"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="kas-Eg-E93"/>
+                    <exclude reference="7Sg-s4-YvF"/>
+                    <exclude reference="JFn-qA-t3V"/>
+                    <exclude reference="W8R-lz-XXX"/>
+                </mask>
+            </variation>
+            <variation key="widthClass=compact">
+                <mask key="subviews">
+                    <include reference="kas-Eg-E93"/>
+                    <include reference="7Sg-s4-YvF"/>
+                    <include reference="JFn-qA-t3V"/>
+                    <include reference="W8R-lz-XXX"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="33.5" y="54"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="AchievementsBackButton.png" width="44" height="44"/>
+        <image name="AchievementsBackButtonHighlighted.png" width="44" height="44"/>
+        <image name="AchievementsBackground.png" width="640" height="1136"/>
+        <image name="AchievementsResumeGameButtonDark.png" width="44" height="44"/>
+        <image name="AchievementsResumeGameButtonHighlighted.png" width="44" height="44"/>
+    </resources>
+</document>

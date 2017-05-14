@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BLRMainGameViewController">
+            <connections>
+                <outlet property="backgroundImage" destination="QR1-2Q-i3R" id="gzl-2I-YDv"/>
+                <outlet property="editGameButton" destination="3MZ-so-wg1" id="GLP-vO-IbM"/>
+                <outlet property="frameWindowContentView" destination="lcr-E2-38D" id="GVt-Nf-bY6"/>
+                <outlet property="gameSummaryButton" destination="XpQ-Ap-mvV" id="Dh9-Lb-k9j"/>
+                <outlet property="headerContentView" destination="xSA-r5-43c" id="P0n-tc-UbZ"/>
+                <outlet property="pinPadContentView" destination="Igm-j0-aGn" id="mrr-pE-E29"/>
+                <outlet property="view" destination="d8f-GY-kMb" id="tZZ-VZ-0ch"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="d8f-GY-kMb">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GameScreenBackground.png" translatesAutoresizingMaskIntoConstraints="NO" id="QR1-2Q-i3R">
+                    <rect key="frame" x="0.0" y="100" width="375" height="416"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a1T-4n-LnU" userLabel="Header View">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                    <color key="backgroundColor" red="0.23529411764705882" green="0.23921568627450979" blue="0.23529411764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AIo-Pi-7lh" userLabel="Footer View">
+                    <rect key="frame" x="0.0" y="513" width="375" height="55"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EdB-VL-bY3" userLabel="Footer Band">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="6"/>
+                            <color key="backgroundColor" red="0.23921568630000001" green="0.23921568630000001" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3MZ-so-wg1" userLabel="Edit Game Button">
+                            <rect key="frame" x="0.0" y="5" width="44" height="44"/>
+                            <inset key="contentEdgeInsets" minX="0.0" minY="4" maxX="0.0" maxY="4"/>
+                            <state key="normal" title="Edit" image="EditGameButtonDark.png">
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="highlighted" image="EditGameButtonHighlight.png"/>
+                            <connections>
+                                <action selector="setToEditPage" destination="-1" eventType="touchUpInside" id="IK8-DV-Z5B"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XpQ-Ap-mvV" userLabel="Game Summary Button" customClass="BLRButton">
+                            <rect key="frame" x="329" y="5" width="44" height="44"/>
+                            <inset key="contentEdgeInsets" minX="4" minY="8" maxX="4" maxY="8"/>
+                            <state key="normal">
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="goToGameSummary" destination="-1" eventType="touchUpInside" id="CAl-c0-iWp"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.23529411764705882" green="0.23921568627450979" blue="0.23529411764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="XpQ-Ap-mvV" secondAttribute="trailing" constant="2" id="4sR-ia-MdP"/>
+                        <constraint firstItem="EdB-VL-bY3" firstAttribute="width" secondItem="AIo-Pi-7lh" secondAttribute="width" id="6e5-TM-Ypq"/>
+                        <constraint firstItem="3MZ-so-wg1" firstAttribute="centerY" secondItem="AIo-Pi-7lh" secondAttribute="centerY" id="AN2-ft-3HV"/>
+                        <constraint firstItem="EdB-VL-bY3" firstAttribute="centerX" secondItem="AIo-Pi-7lh" secondAttribute="centerX" id="AvE-2W-2dP"/>
+                        <constraint firstItem="XpQ-Ap-mvV" firstAttribute="centerY" secondItem="AIo-Pi-7lh" secondAttribute="centerY" id="BPK-kn-g7g"/>
+                        <constraint firstItem="3MZ-so-wg1" firstAttribute="leading" secondItem="AIo-Pi-7lh" secondAttribute="leading" id="JEw-is-o7W"/>
+                        <constraint firstItem="EdB-VL-bY3" firstAttribute="top" secondItem="AIo-Pi-7lh" secondAttribute="top" id="XaE-vD-MJF"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Igm-j0-aGn" userLabel="PinPadContentView">
+                    <rect key="frame" x="0.0" y="100" width="375" height="416"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xSA-r5-43c">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lcr-E2-38D" userLabel="FrameContentView">
+                    <rect key="frame" x="15" y="395" width="70" height="90"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="90" id="u1P-kX-Oml"/>
+                        <constraint firstAttribute="width" constant="70" id="uPS-HR-XUo"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="a1T-4n-LnU" firstAttribute="width" secondItem="d8f-GY-kMb" secondAttribute="width" id="2Ep-TN-oT6"/>
+                <constraint firstItem="AIo-Pi-7lh" firstAttribute="height" secondItem="d8f-GY-kMb" secondAttribute="height" multiplier="55:568" id="3D6-Yv-hoZ"/>
+                <constraint firstItem="Igm-j0-aGn" firstAttribute="top" secondItem="d8f-GY-kMb" secondAttribute="top" constant="100" id="4Dc-pL-hZL"/>
+                <constraint firstItem="EdB-VL-bY3" firstAttribute="height" secondItem="d8f-GY-kMb" secondAttribute="height" multiplier="6:568" id="5y6-wG-ekU"/>
+                <constraint firstItem="AIo-Pi-7lh" firstAttribute="top" secondItem="lcr-E2-38D" secondAttribute="bottom" constant="28" id="Bfg-eG-lGX"/>
+                <constraint firstItem="QR1-2Q-i3R" firstAttribute="width" secondItem="d8f-GY-kMb" secondAttribute="width" id="BnE-1j-aWe"/>
+                <constraint firstAttribute="bottom" secondItem="AIo-Pi-7lh" secondAttribute="bottom" id="DfL-2Z-uTR"/>
+                <constraint firstItem="Igm-j0-aGn" firstAttribute="width" secondItem="QR1-2Q-i3R" secondAttribute="width" id="EEY-Q2-Xdc"/>
+                <constraint firstItem="XpQ-Ap-mvV" firstAttribute="height" secondItem="d8f-GY-kMb" secondAttribute="height" multiplier="44:568" id="FEV-wn-DzS"/>
+                <constraint firstItem="a1T-4n-LnU" firstAttribute="top" secondItem="d8f-GY-kMb" secondAttribute="top" id="OLD-42-BLV"/>
+                <constraint firstItem="QR1-2Q-i3R" firstAttribute="centerY" secondItem="d8f-GY-kMb" secondAttribute="centerY" constant="24" id="PAz-cL-Qzu"/>
+                <constraint firstItem="xSA-r5-43c" firstAttribute="leading" secondItem="d8f-GY-kMb" secondAttribute="leading" id="QJK-IF-iYb"/>
+                <constraint firstItem="3MZ-so-wg1" firstAttribute="height" secondItem="d8f-GY-kMb" secondAttribute="height" multiplier="44:568" id="VCf-kz-K6G"/>
+                <constraint firstItem="Igm-j0-aGn" firstAttribute="leading" secondItem="d8f-GY-kMb" secondAttribute="leading" id="YsY-kW-BmE"/>
+                <constraint firstItem="AIo-Pi-7lh" firstAttribute="top" secondItem="QR1-2Q-i3R" secondAttribute="bottom" constant="-3" id="Z6X-0B-Z8u"/>
+                <constraint firstItem="AIo-Pi-7lh" firstAttribute="width" secondItem="d8f-GY-kMb" secondAttribute="width" id="apa-T0-Ku1"/>
+                <constraint firstItem="lcr-E2-38D" firstAttribute="leading" secondItem="d8f-GY-kMb" secondAttribute="leading" constant="15" id="aqp-Sq-QC0"/>
+                <constraint firstItem="XpQ-Ap-mvV" firstAttribute="width" secondItem="d8f-GY-kMb" secondAttribute="width" multiplier="44:375" id="gV7-k9-bWm"/>
+                <constraint firstItem="QR1-2Q-i3R" firstAttribute="top" secondItem="a1T-4n-LnU" secondAttribute="bottom" id="i5N-5D-HKU"/>
+                <constraint firstItem="xSA-r5-43c" firstAttribute="width" secondItem="d8f-GY-kMb" secondAttribute="width" id="kvX-1G-jyZ"/>
+                <constraint firstItem="Igm-j0-aGn" firstAttribute="top" secondItem="xSA-r5-43c" secondAttribute="bottom" constant="-100" id="lhF-NM-eSR"/>
+                <constraint firstItem="AIo-Pi-7lh" firstAttribute="centerX" secondItem="d8f-GY-kMb" secondAttribute="centerX" id="nJz-nG-aTA"/>
+                <constraint firstItem="xSA-r5-43c" firstAttribute="top" secondItem="d8f-GY-kMb" secondAttribute="top" id="oUI-SE-QIw"/>
+                <constraint firstItem="a1T-4n-LnU" firstAttribute="leading" secondItem="d8f-GY-kMb" secondAttribute="leading" id="qYO-ev-dVo"/>
+                <constraint firstItem="QR1-2Q-i3R" firstAttribute="centerX" secondItem="d8f-GY-kMb" secondAttribute="centerX" id="rOi-dZ-UeC"/>
+                <constraint firstItem="3MZ-so-wg1" firstAttribute="width" secondItem="d8f-GY-kMb" secondAttribute="width" multiplier="44:375" id="xff-4T-pGh"/>
+                <constraint firstItem="AIo-Pi-7lh" firstAttribute="top" secondItem="Igm-j0-aGn" secondAttribute="bottom" constant="-3" id="zV9-Z4-YpL"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="33.5" y="54"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="EditGameButtonDark.png" width="88" height="80"/>
+        <image name="EditGameButtonHighlight.png" width="88" height="80"/>
+        <image name="GameScreenBackground.png" width="640" height="798"/>
+    </resources>
+</document>

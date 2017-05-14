@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BLRSelectedPlayerCell" id="H63-P9-Pdh" userLabel="SelectedPlayerCell" customClass="BLRSelectedPlayerCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="H63-P9-Pdh" id="aVM-D5-Rq4">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="39.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WbV-wf-HYU" userLabel="Player Label">
+                        <rect key="frame" x="10" y="0.0" width="310" height="40"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.77254901960784317" green="0.77254901960784317" blue="0.77254901960784317" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="highlightedColor" red="0.77254901960784317" green="0.77254901960784317" blue="0.77254901960784317" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </label>
+                    <textField hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XB6-rB-LJk" customClass="BLRMenuTextField">
+                        <rect key="frame" x="10" y="0.0" width="310" height="40"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
+                    </textField>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tfZ-ff-h3e" userLabel="Delete Button">
+                        <rect key="frame" x="320" y="0.0" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="IK9-qu-7SR"/>
+                        </constraints>
+                        <state key="normal" image="DeleteCellStartMenu.png"/>
+                        <state key="highlighted" backgroundImage="DeleteCellStartMenu.png"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sx4-qj-ugo" userLabel="Edit Button">
+                        <rect key="frame" x="-40" y="0.0" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="O8p-Ad-mh7"/>
+                        </constraints>
+                        <state key="normal" image="MenuCellMinus.png"/>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MenuMoveButton.png" translatesAutoresizingMaskIntoConstraints="NO" id="hcj-2m-J38" userLabel="Accessory Image">
+                        <rect key="frame" x="280" y="0.0" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="UDX-tV-L1z"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+            </tableViewCellContentView>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="tfZ-ff-h3e" secondAttribute="leading" id="3Xg-vW-hTe"/>
+                <constraint firstItem="sx4-qj-ugo" firstAttribute="top" secondItem="H63-P9-Pdh" secondAttribute="top" id="9Vh-UF-1J2"/>
+                <constraint firstItem="sx4-qj-ugo" firstAttribute="height" secondItem="H63-P9-Pdh" secondAttribute="height" id="BfH-lS-dWo"/>
+                <constraint firstItem="WbV-wf-HYU" firstAttribute="leading" secondItem="H63-P9-Pdh" secondAttribute="leading" constant="10" id="E4u-DH-Au6"/>
+                <constraint firstItem="XB6-rB-LJk" firstAttribute="top" secondItem="H63-P9-Pdh" secondAttribute="top" id="Ka2-N5-pUC"/>
+                <constraint firstItem="hcj-2m-J38" firstAttribute="height" secondItem="H63-P9-Pdh" secondAttribute="height" id="KdF-8l-BBY"/>
+                <constraint firstAttribute="trailing" secondItem="hcj-2m-J38" secondAttribute="trailing" id="V0m-ja-qrm"/>
+                <constraint firstItem="tfZ-ff-h3e" firstAttribute="height" secondItem="H63-P9-Pdh" secondAttribute="height" id="XBD-an-dTu"/>
+                <constraint firstItem="WbV-wf-HYU" firstAttribute="top" secondItem="H63-P9-Pdh" secondAttribute="top" id="bbe-9U-Z1g"/>
+                <constraint firstItem="tfZ-ff-h3e" firstAttribute="top" secondItem="H63-P9-Pdh" secondAttribute="top" id="dTC-3b-4zp"/>
+                <constraint firstAttribute="trailing" secondItem="XB6-rB-LJk" secondAttribute="trailing" id="hBW-sX-gAY"/>
+                <constraint firstItem="sx4-qj-ugo" firstAttribute="trailing" secondItem="H63-P9-Pdh" secondAttribute="leading" id="lBu-Mt-DjZ"/>
+                <constraint firstItem="hcj-2m-J38" firstAttribute="top" secondItem="H63-P9-Pdh" secondAttribute="top" id="rCm-VY-81v"/>
+                <constraint firstItem="WbV-wf-HYU" firstAttribute="height" secondItem="H63-P9-Pdh" secondAttribute="height" id="rpy-dv-sKA"/>
+                <constraint firstAttribute="trailing" secondItem="WbV-wf-HYU" secondAttribute="trailing" id="s3y-by-IGG"/>
+                <constraint firstItem="XB6-rB-LJk" firstAttribute="leading" secondItem="H63-P9-Pdh" secondAttribute="leading" constant="10" id="u44-kM-eWJ"/>
+                <constraint firstItem="XB6-rB-LJk" firstAttribute="height" secondItem="H63-P9-Pdh" secondAttribute="height" id="zzS-u6-0ng"/>
+            </constraints>
+            <connections>
+                <outlet property="accessoryImage" destination="hcj-2m-J38" id="tSv-Ec-gWj"/>
+                <outlet property="deleteButton" destination="tfZ-ff-h3e" id="UqI-oo-d2q"/>
+                <outlet property="editButton" destination="sx4-qj-ugo" id="o5M-11-VKj"/>
+                <outlet property="label" destination="WbV-wf-HYU" id="lh6-3Y-bZD"/>
+                <outlet property="textField" destination="XB6-rB-LJk" id="i75-N8-dfo"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="DeleteCellStartMenu.png" width="88" height="88"/>
+        <image name="MenuCellMinus.png" width="88" height="88"/>
+        <image name="MenuMoveButton.png" width="88" height="88"/>
+    </resources>
+</document>

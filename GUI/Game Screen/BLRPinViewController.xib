@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BLRPinViewController">
+            <connections>
+                <outlet property="numberPadButton" destination="Taq-YO-2p7" id="BKH-8Q-hRU"/>
+                <outlet property="pin10Button" destination="FrB-Zx-Y5W" id="pgT-6Y-2N2"/>
+                <outlet property="pin1Button" destination="2uK-Ak-8ui" id="dFb-bR-3uJ"/>
+                <outlet property="pin2Button" destination="ZTa-MO-B16" id="cMQ-15-pEP"/>
+                <outlet property="pin3Button" destination="e5g-SG-NAS" id="2x6-ys-86D"/>
+                <outlet property="pin4Button" destination="G4l-EJ-ge8" id="YlD-a8-PfD"/>
+                <outlet property="pin5Button" destination="qLB-RZ-Ptx" id="NGY-wO-llk"/>
+                <outlet property="pin6Button" destination="4yM-gM-gxg" id="UGK-gb-Myp"/>
+                <outlet property="pin7Button" destination="fq0-df-sR4" id="77J-6N-aEq"/>
+                <outlet property="pin8Button" destination="aly-qK-yBT" id="AHv-bY-Q4X"/>
+                <outlet property="pin9Button" destination="lcy-rK-6on" id="vPg-p5-53s"/>
+                <outlet property="pinsImage" destination="FHv-pk-nV5" id="hyO-xU-nTd"/>
+                <outlet property="view" destination="SJ3-u5-qSZ" id="KIZ-kq-p4b"/>
+                <outletCollection property="pinsCollection" destination="2uK-Ak-8ui" id="xKv-4e-JxX"/>
+                <outletCollection property="pinsCollection" destination="ZTa-MO-B16" id="Ehg-t0-5Ky"/>
+                <outletCollection property="pinsCollection" destination="e5g-SG-NAS" id="co3-Lr-rN7"/>
+                <outletCollection property="pinsCollection" destination="G4l-EJ-ge8" id="f0c-QF-cQQ"/>
+                <outletCollection property="pinsCollection" destination="qLB-RZ-Ptx" id="f4Q-eU-pKP"/>
+                <outletCollection property="pinsCollection" destination="4yM-gM-gxg" id="Shs-Qc-TX7"/>
+                <outletCollection property="pinsCollection" destination="fq0-df-sR4" id="eAw-Bo-OTQ"/>
+                <outletCollection property="pinsCollection" destination="aly-qK-yBT" id="idt-Dw-UV3"/>
+                <outletCollection property="pinsCollection" destination="lcy-rK-6on" id="yoy-wP-9nc"/>
+                <outletCollection property="pinsCollection" destination="FrB-Zx-Y5W" id="iDU-08-B2Z"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="SJ3-u5-qSZ">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="416"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Uf-NR-hOj" userLabel="Content View">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="416"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PinsImage.png" translatesAutoresizingMaskIntoConstraints="NO" id="FHv-pk-nV5" userLabel="Pins Image">
+                            <rect key="frame" x="0.0" y="14" width="375" height="354"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="375" id="YEd-NS-kiw"/>
+                                <constraint firstAttribute="height" constant="354" id="mnl-LN-XAM"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2uK-Ak-8ui" userLabel="Pin 1">
+                            <rect key="frame" x="165" y="242" width="45" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="45" id="B7b-ag-ISU"/>
+                                <constraint firstAttribute="height" constant="44" id="hj1-Fi-asw"/>
+                            </constraints>
+                            <inset key="contentEdgeInsets" minX="9" minY="9" maxX="9" maxY="9"/>
+                            <state key="normal" image="Circle1Red.png">
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="disabled" image="Circle1Grey.png"/>
+                            <state key="selected" image="Circle1Grey.png"/>
+                            <connections>
+                                <action selector="pinButtonAction:" destination="-1" eventType="touchUpInside" id="6CK-r5-nl3"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZTa-MO-B16" userLabel="Pin 2">
+                            <rect key="frame" x="127" y="186" width="45" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="4Vc-ry-rGP"/>
+                                <constraint firstAttribute="width" constant="45" id="daT-8j-Z91"/>
+                            </constraints>
+                            <inset key="contentEdgeInsets" minX="9" minY="9" maxX="9" maxY="9"/>
+                            <state key="normal" image="Circle2Red.png">
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="disabled" image="Circle2Grey.png"/>
+                            <state key="selected" image="Circle2Grey.png"/>
+                            <connections>
+                                <action selector="pinButtonAction:" destination="-1" eventType="touchUpInside" id="np2-5L-wzf"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e5g-SG-NAS" userLabel="Pin 3">
+                            <rect key="frame" x="205" y="186" width="45" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="9xB-eK-bYV"/>
+                                <constraint firstAttribute="width" constant="45" id="u73-Ee-iKN"/>
+                            </constraints>
+                            <inset key="contentEdgeInsets" minX="9" minY="9" maxX="9" maxY="9"/>
+                            <state key="normal" image="Circle3Red.png">
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="disabled" image="Circle3Grey.png"/>
+                            <state key="selected" image="Circle3Grey.png"/>
+                            <connections>
+                                <action selector="pinButtonAction:" destination="-1" eventType="touchUpInside" id="7f6-7x-z9C"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G4l-EJ-ge8" userLabel="Pin 4">
+                            <rect key="frame" x="91" y="132" width="45" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="45" id="MuN-SK-QWv"/>
+                                <constraint firstAttribute="height" constant="44" id="gy7-ex-9yT"/>
+                            </constraints>
+                            <inset key="contentEdgeInsets" minX="9" minY="9" maxX="9" maxY="9"/>
+                            <state key="normal" image="Circle4Red.png">
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="disabled" image="Circle4Grey.png"/>
+                            <state key="selected" image="Circle4Grey.png"/>
+                            <connections>
+                                <action selector="pinButtonAction:" destination="-1" eventType="touchUpInside" id="VBg-oy-NQa"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qLB-RZ-Ptx" userLabel="Pin 5">
+                            <rect key="frame" x="165" y="132" width="45" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="Krs-a1-xcm"/>
+                                <constraint firstAttribute="width" constant="45" id="egt-Iw-45z"/>
+                            </constraints>
+                            <inset key="contentEdgeInsets" minX="9" minY="9" maxX="9" maxY="9"/>
+                            <state key="normal" image="Circle5Red.png">
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="disabled" image="Circle5Grey.png"/>
+                            <state key="selected" image="Circle5Grey.png"/>
+                            <connections>
+                                <action selector="pinButtonAction:" destination="-1" eventType="touchUpInside" id="cwN-pF-oAb"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4yM-gM-gxg" userLabel="Pin 6">
+                            <rect key="frame" x="242" y="132" width="45" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="45" id="oRG-eL-w5X"/>
+                                <constraint firstAttribute="height" constant="44" id="yve-3U-CqF"/>
+                            </constraints>
+                            <inset key="contentEdgeInsets" minX="9" minY="9" maxX="9" maxY="9"/>
+                            <state key="normal" image="Circle6Red.png">
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="disabled" image="Circle6Grey.png"/>
+                            <state key="selected" image="Circle6Grey.png"/>
+                            <connections>
+                                <action selector="pinButtonAction:" destination="-1" eventType="touchUpInside" id="mUV-B0-qFP"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fq0-df-sR4" userLabel="Pin 7">
+                            <rect key="frame" x="56" y="77" width="45" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="0c5-p5-qDd"/>
+                                <constraint firstAttribute="width" constant="45" id="DJw-71-2b8"/>
+                            </constraints>
+                            <inset key="contentEdgeInsets" minX="9" minY="9" maxX="9" maxY="9"/>
+                            <state key="normal" image="Circle7Red.png">
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="disabled" image="Circle7Grey.png"/>
+                            <state key="selected" image="Circle7Grey.png"/>
+                            <connections>
+                                <action selector="pinButtonAction:" destination="-1" eventType="touchUpInside" id="m05-mY-SPb"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aly-qK-yBT" userLabel="Pin 8">
+                            <rect key="frame" x="127" y="77" width="45" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="45" id="2uQ-wX-OQN"/>
+                                <constraint firstAttribute="height" constant="44" id="qSh-je-mfB"/>
+                            </constraints>
+                            <inset key="contentEdgeInsets" minX="9" minY="9" maxX="9" maxY="9"/>
+                            <state key="normal" image="Circle8Red.png">
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="disabled" image="Circle8Grey.png"/>
+                            <state key="selected" image="Circle8Grey.png"/>
+                            <connections>
+                                <action selector="pinButtonAction:" destination="-1" eventType="touchUpInside" id="DJx-ae-7FM"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lcy-rK-6on" userLabel="Pin 9">
+                            <rect key="frame" x="204" y="77" width="45" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="3kx-Ki-AM5"/>
+                                <constraint firstAttribute="width" constant="45" id="wxM-uX-XQB"/>
+                            </constraints>
+                            <inset key="contentEdgeInsets" minX="9" minY="9" maxX="9" maxY="9"/>
+                            <state key="normal" image="Circle9Red.png">
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="disabled" image="Circle9Grey.png"/>
+                            <state key="selected" image="Circle9Grey.png"/>
+                            <connections>
+                                <action selector="pinButtonAction:" destination="-1" eventType="touchUpInside" id="FB1-l1-zpA"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FrB-Zx-Y5W" userLabel="Pin 10">
+                            <rect key="frame" x="277" y="77" width="45" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="jFk-tQ-DCE"/>
+                                <constraint firstAttribute="width" constant="45" id="jY6-Dr-duR"/>
+                            </constraints>
+                            <inset key="contentEdgeInsets" minX="9" minY="9" maxX="9" maxY="9"/>
+                            <state key="normal" image="Circle10Red.png">
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="disabled" image="Circle10Grey.png"/>
+                            <state key="selected" image="Circle10Grey.png"/>
+                            <connections>
+                                <action selector="pinButtonAction:" destination="-1" eventType="touchUpInside" id="crg-UW-LCR"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="2uK-Ak-8ui" firstAttribute="top" secondItem="FHv-pk-nV5" secondAttribute="bottom" constant="-126" id="16u-ye-0Pu"/>
+                        <constraint firstItem="4yM-gM-gxg" firstAttribute="top" secondItem="FrB-Zx-Y5W" secondAttribute="bottom" constant="11" id="1bE-Yq-Epj"/>
+                        <constraint firstItem="FHv-pk-nV5" firstAttribute="centerX" secondItem="5Uf-NR-hOj" secondAttribute="centerX" id="4PT-f5-gF7"/>
+                        <constraint firstItem="4yM-gM-gxg" firstAttribute="leading" secondItem="qLB-RZ-Ptx" secondAttribute="trailing" constant="32" id="4gU-vf-dey"/>
+                        <constraint firstItem="ZTa-MO-B16" firstAttribute="centerY" secondItem="5Uf-NR-hOj" secondAttribute="centerY" id="BNe-xz-VLX"/>
+                        <constraint firstItem="qLB-RZ-Ptx" firstAttribute="leading" secondItem="G4l-EJ-ge8" secondAttribute="trailing" constant="29" id="BRd-nR-z7Q"/>
+                        <constraint firstItem="2uK-Ak-8ui" firstAttribute="top" secondItem="e5g-SG-NAS" secondAttribute="bottom" constant="12" id="F67-rX-rau"/>
+                        <constraint firstAttribute="width" constant="375" id="FS4-4r-Mg5"/>
+                        <constraint firstItem="qLB-RZ-Ptx" firstAttribute="centerX" secondItem="5Uf-NR-hOj" secondAttribute="centerX" id="K2x-F1-dhF"/>
+                        <constraint firstItem="qLB-RZ-Ptx" firstAttribute="leading" secondItem="aly-qK-yBT" secondAttribute="trailing" constant="-7" id="MA9-yf-CkG"/>
+                        <constraint firstItem="FrB-Zx-Y5W" firstAttribute="leading" secondItem="lcy-rK-6on" secondAttribute="trailing" constant="28" id="Mon-4A-mRZ"/>
+                        <constraint firstItem="qLB-RZ-Ptx" firstAttribute="top" secondItem="aly-qK-yBT" secondAttribute="bottom" constant="11" id="Rcf-2j-4Bc"/>
+                        <constraint firstItem="qLB-RZ-Ptx" firstAttribute="top" secondItem="lcy-rK-6on" secondAttribute="bottom" constant="11" id="SSf-rF-sY8"/>
+                        <constraint firstItem="2uK-Ak-8ui" firstAttribute="top" secondItem="ZTa-MO-B16" secondAttribute="bottom" constant="12" id="Toa-qD-Bsc"/>
+                        <constraint firstItem="e5g-SG-NAS" firstAttribute="centerY" secondItem="5Uf-NR-hOj" secondAttribute="centerY" id="V77-3s-bq9"/>
+                        <constraint firstItem="G4l-EJ-ge8" firstAttribute="leading" secondItem="fq0-df-sR4" secondAttribute="trailing" constant="-10" id="Xyx-Is-ERH"/>
+                        <constraint firstItem="4yM-gM-gxg" firstAttribute="leading" secondItem="e5g-SG-NAS" secondAttribute="trailing" constant="-8" id="YDM-AC-3Yk"/>
+                        <constraint firstItem="ZTa-MO-B16" firstAttribute="top" secondItem="qLB-RZ-Ptx" secondAttribute="bottom" constant="10" id="ZMS-2l-agR"/>
+                        <constraint firstItem="lcy-rK-6on" firstAttribute="leading" secondItem="qLB-RZ-Ptx" secondAttribute="trailing" constant="-6" id="cPq-co-fZb"/>
+                        <constraint firstItem="G4l-EJ-ge8" firstAttribute="top" secondItem="fq0-df-sR4" secondAttribute="bottom" constant="11" id="dO1-9G-iho"/>
+                        <constraint firstItem="e5g-SG-NAS" firstAttribute="leading" secondItem="ZTa-MO-B16" secondAttribute="trailing" constant="33" id="dhB-HN-NqZ"/>
+                        <constraint firstItem="e5g-SG-NAS" firstAttribute="top" secondItem="4yM-gM-gxg" secondAttribute="bottom" constant="10" id="fv7-zy-b60"/>
+                        <constraint firstItem="2uK-Ak-8ui" firstAttribute="centerX" secondItem="5Uf-NR-hOj" secondAttribute="centerX" id="j4v-50-xe3"/>
+                        <constraint firstItem="aly-qK-yBT" firstAttribute="leading" secondItem="fq0-df-sR4" secondAttribute="trailing" constant="26" id="l7k-Yb-UKw"/>
+                        <constraint firstItem="ZTa-MO-B16" firstAttribute="leading" secondItem="G4l-EJ-ge8" secondAttribute="trailing" constant="-9" id="lad-Ub-Fj3"/>
+                        <constraint firstItem="lcy-rK-6on" firstAttribute="leading" secondItem="aly-qK-yBT" secondAttribute="trailing" constant="32" id="q1e-X5-kVK"/>
+                        <constraint firstAttribute="height" constant="416" id="wgC-kW-6U1"/>
+                        <constraint firstItem="ZTa-MO-B16" firstAttribute="top" secondItem="G4l-EJ-ge8" secondAttribute="bottom" constant="10" id="yFn-bt-CPf"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Taq-YO-2p7" userLabel="Number Pad Button">
+                    <rect key="frame" x="324" y="346" width="44" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="44" id="Zmh-NB-AaV"/>
+                        <constraint firstAttribute="height" constant="44" id="hqL-zJ-3bQ"/>
+                    </constraints>
+                    <state key="normal" image="NumberPadButtonDark.png">
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <state key="highlighted" image="NumberPadButtonHighlight.png"/>
+                    <connections>
+                        <action selector="numberPadButtonAction" destination="-1" eventType="touchUpInside" id="Ve4-0p-cZZ"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="5Uf-NR-hOj" secondAttribute="trailing" id="DFF-Gr-cxG"/>
+                <constraint firstItem="5Uf-NR-hOj" firstAttribute="centerX" secondItem="SJ3-u5-qSZ" secondAttribute="centerX" id="Iez-AL-Nmn"/>
+                <constraint firstAttribute="trailing" secondItem="Taq-YO-2p7" secondAttribute="trailing" constant="7" id="JOQ-39-s03"/>
+                <constraint firstItem="5Uf-NR-hOj" firstAttribute="centerY" secondItem="SJ3-u5-qSZ" secondAttribute="centerY" id="Lvg-oc-Dy1"/>
+                <constraint firstItem="5Uf-NR-hOj" firstAttribute="top" secondItem="SJ3-u5-qSZ" secondAttribute="top" id="dNr-j2-fva"/>
+                <constraint firstAttribute="bottom" secondItem="5Uf-NR-hOj" secondAttribute="bottom" id="kzH-4B-ve5"/>
+                <constraint firstAttribute="bottom" secondItem="Taq-YO-2p7" secondAttribute="bottom" constant="26" id="pHD-Rg-Kfo"/>
+                <constraint firstItem="5Uf-NR-hOj" firstAttribute="leading" secondItem="SJ3-u5-qSZ" secondAttribute="leading" id="udJ-0i-bs4"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Circle10Grey.png" width="42" height="42"/>
+        <image name="Circle10Red.png" width="42" height="42"/>
+        <image name="Circle1Grey.png" width="45" height="46"/>
+        <image name="Circle1Red.png" width="45" height="46"/>
+        <image name="Circle2Grey.png" width="45" height="45"/>
+        <image name="Circle2Red.png" width="45" height="45"/>
+        <image name="Circle3Grey.png" width="45" height="45"/>
+        <image name="Circle3Red.png" width="45" height="45"/>
+        <image name="Circle4Grey.png" width="44" height="44"/>
+        <image name="Circle4Red.png" width="44" height="44"/>
+        <image name="Circle5Grey.png" width="44" height="44"/>
+        <image name="Circle5Red.png" width="44" height="44"/>
+        <image name="Circle6Grey.png" width="44" height="44"/>
+        <image name="Circle6Red.png" width="44" height="44"/>
+        <image name="Circle7Grey.png" width="42" height="42"/>
+        <image name="Circle7Red.png" width="42" height="42"/>
+        <image name="Circle8Grey.png" width="42" height="42"/>
+        <image name="Circle8Red.png" width="42" height="42"/>
+        <image name="Circle9Grey.png" width="41" height="42"/>
+        <image name="Circle9Red.png" width="41" height="42"/>
+        <image name="NumberPadButtonDark.png" width="88" height="88"/>
+        <image name="NumberPadButtonHighlight.png" width="88" height="88"/>
+        <image name="PinsImage.png" width="764" height="633"/>
+    </resources>
+</document>

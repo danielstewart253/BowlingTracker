@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BLRGameHeaderViewController">
+            <connections>
+                <outlet property="achievementsButton" destination="xeb-Pr-3jx" id="CKR-pA-NKT"/>
+                <outlet property="backgroundView" destination="9iM-wq-kz8" id="LJi-WI-elr"/>
+                <outlet property="ballSpeedButton" destination="pee-KF-7eC" id="xIS-A5-2VV"/>
+                <outlet property="ballSpeedContentView" destination="ysK-lv-YFR" id="Be1-XO-Xpf"/>
+                <outlet property="bandView" destination="4yN-bn-MXi" id="bzB-JA-FlE"/>
+                <outlet property="foulButton" destination="P4h-Dk-p5j" id="ijY-PI-qUg"/>
+                <outlet property="frameBarContainerView" destination="8TM-zw-Deo" id="eWF-FJ-WS5"/>
+                <outlet property="gutterButton" destination="50a-PG-S9N" id="CrQ-d0-MNa"/>
+                <outlet property="missButton" destination="5dM-1A-Zst" id="K4T-wN-8SI"/>
+                <outlet property="spareButton" destination="XDo-1q-smk" id="8yA-FL-8UE"/>
+                <outlet property="splitButton" destination="UHO-Cy-Bbw" id="TGS-tf-fmn"/>
+                <outlet property="strikeButton" destination="g5q-eo-1kB" id="hj4-CC-nBh"/>
+                <outlet property="view" destination="xnP-vs-ZJg" id="Nap-xY-Uft"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="xnP-vs-ZJg">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9iM-wq-kz8" userLabel="Background View">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                    <color key="backgroundColor" red="0.23921568627450979" green="0.23922491069999999" blue="0.23921568627450979" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4yN-bn-MXi">
+                    <rect key="frame" x="0.0" y="45" width="375" height="48"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TRh-r7-rDY" userLabel="Left Separator">
+                            <rect key="frame" x="91" y="10" width="3" height="28"/>
+                            <color key="backgroundColor" red="0.30588235294117649" green="0.30588235294117649" blue="0.30588235294117649" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="28" id="6TX-sA-enB"/>
+                                <constraint firstAttribute="width" constant="3" id="qCw-HE-MuX"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nn0-jX-HLh" userLabel="Center Separator">
+                            <rect key="frame" x="186" y="10" width="3" height="28"/>
+                            <color key="backgroundColor" red="0.30588235289999999" green="0.30588235289999999" blue="0.30588235289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="28" id="bnj-ii-h2U"/>
+                                <constraint firstAttribute="width" constant="3" id="kxp-KS-tXW"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NI0-fh-4v8" userLabel="Right Separator">
+                            <rect key="frame" x="281" y="10" width="3" height="28"/>
+                            <color key="backgroundColor" red="0.30588235289999999" green="0.30588235289999999" blue="0.30588235289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="3" id="Uwb-i0-l9b"/>
+                                <constraint firstAttribute="height" constant="28" id="uTR-pn-y7J"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g5q-eo-1kB" userLabel="Strike">
+                            <rect key="frame" x="6" y="3" width="75" height="42"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="42" id="4uW-lh-70C"/>
+                                <constraint firstAttribute="width" relation="lessThanOrEqual" constant="75" id="gfR-c7-I0l"/>
+                            </constraints>
+                            <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="-1" maxY="0.0"/>
+                            <state key="normal" image="StrikeButtonDark.png">
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="selected" image="StrikeButtonLight.png"/>
+                            <connections>
+                                <action selector="strikeButtonAction:" destination="-1" eventType="touchUpInside" id="96E-Ji-opE"/>
+                            </connections>
+                        </button>
+                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5dM-1A-Zst" userLabel="Miss">
+                            <rect key="frame" x="6" y="3" width="75" height="42"/>
+                            <constraints>
+                                <constraint firstAttribute="width" relation="lessThanOrEqual" constant="75" id="RR4-Xc-4mY"/>
+                                <constraint firstAttribute="height" constant="42" id="po8-a2-X1K"/>
+                            </constraints>
+                            <state key="normal" image="MissButtonDark.png">
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="selected" image="MissButtonHighlight.png"/>
+                            <connections>
+                                <action selector="missButtonAction:" destination="-1" eventType="touchUpInside" id="7WV-Nt-i5a"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UHO-Cy-Bbw" userLabel="Split">
+                            <rect key="frame" x="102" y="3" width="75" height="42"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="42" id="Kbu-au-pqg"/>
+                                <constraint firstAttribute="width" relation="lessThanOrEqual" constant="75" id="oFe-g3-0ih"/>
+                            </constraints>
+                            <state key="normal" image="SplitButtonDark.png">
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="selected" image="SplitButtonLight.png"/>
+                            <connections>
+                                <action selector="splitButtonAction:" destination="-1" eventType="touchUpInside" id="kX6-5W-k2c"/>
+                            </connections>
+                        </button>
+                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XDo-1q-smk" userLabel="Spare">
+                            <rect key="frame" x="102" y="3" width="75" height="42"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="42" id="7cg-Fz-wei"/>
+                                <constraint firstAttribute="width" relation="lessThanOrEqual" constant="75" id="vlj-IT-X5J"/>
+                            </constraints>
+                            <state key="normal" image="SpareButtonDark.png">
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="selected" image="SpareButtonLight.png"/>
+                            <connections>
+                                <action selector="spareButtonAction:" destination="-1" eventType="touchUpInside" id="P9K-6x-4gr"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="50a-PG-S9N" userLabel="Gutter">
+                            <rect key="frame" x="199" y="3" width="75" height="42"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="42" id="iU1-Do-Jsg"/>
+                                <constraint firstAttribute="width" relation="lessThanOrEqual" constant="75" id="rPe-Ba-t4t"/>
+                            </constraints>
+                            <state key="normal" image="GutterButtonDark.png">
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="selected" image="GutterButtonLight.png"/>
+                            <connections>
+                                <action selector="gutterButtonAction:" destination="-1" eventType="touchUpInside" id="IfW-S6-OpX"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P4h-Dk-p5j" userLabel="Foul">
+                            <rect key="frame" x="290" y="3" width="75" height="42"/>
+                            <constraints>
+                                <constraint firstAttribute="width" relation="lessThanOrEqual" constant="75" id="98M-21-Q0m"/>
+                                <constraint firstAttribute="height" constant="42" id="FkU-fC-ayp"/>
+                            </constraints>
+                            <state key="normal" image="FoulButtonDark.png">
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="selected" image="FoulButtonLight.png"/>
+                            <connections>
+                                <action selector="foulButtonAction:" destination="-1" eventType="touchUpInside" id="E4D-9h-CJF"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.14901960780000001" green="0.14901960780000001" blue="0.14901960780000001" alpha="0.90000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="P4h-Dk-p5j" firstAttribute="centerY" secondItem="4yN-bn-MXi" secondAttribute="centerY" id="0Kp-cH-6QY"/>
+                        <constraint firstItem="NI0-fh-4v8" firstAttribute="leading" secondItem="50a-PG-S9N" secondAttribute="trailing" constant="7" id="0cG-wi-PV1"/>
+                        <constraint firstItem="nn0-jX-HLh" firstAttribute="leading" secondItem="XDo-1q-smk" secondAttribute="trailing" constant="9" id="39f-My-vQc"/>
+                        <constraint firstItem="UHO-Cy-Bbw" firstAttribute="centerY" secondItem="4yN-bn-MXi" secondAttribute="centerY" id="3uu-cI-rsO"/>
+                        <constraint firstItem="50a-PG-S9N" firstAttribute="leading" secondItem="nn0-jX-HLh" secondAttribute="trailing" constant="10" id="7De-vq-IVu"/>
+                        <constraint firstItem="g5q-eo-1kB" firstAttribute="width" secondItem="UHO-Cy-Bbw" secondAttribute="width" id="9WS-0Q-aZg"/>
+                        <constraint firstItem="XDo-1q-smk" firstAttribute="centerY" secondItem="4yN-bn-MXi" secondAttribute="centerY" id="Hdv-Rw-eXI"/>
+                        <constraint firstItem="TRh-r7-rDY" firstAttribute="centerY" secondItem="4yN-bn-MXi" secondAttribute="centerY" id="Hf4-hk-bdP"/>
+                        <constraint firstItem="50a-PG-S9N" firstAttribute="centerY" secondItem="4yN-bn-MXi" secondAttribute="centerY" id="JM9-QJ-vtM"/>
+                        <constraint firstItem="TRh-r7-rDY" firstAttribute="leading" secondItem="g5q-eo-1kB" secondAttribute="trailing" constant="10" id="TlJ-7E-3mK"/>
+                        <constraint firstItem="P4h-Dk-p5j" firstAttribute="leading" secondItem="NI0-fh-4v8" secondAttribute="trailing" constant="6" id="Wey-ox-NkO"/>
+                        <constraint firstAttribute="height" constant="48" id="Xwa-En-3ID"/>
+                        <constraint firstItem="g5q-eo-1kB" firstAttribute="width" secondItem="XDo-1q-smk" secondAttribute="width" id="Xxj-f8-qFL"/>
+                        <constraint firstItem="XDo-1q-smk" firstAttribute="leading" secondItem="TRh-r7-rDY" secondAttribute="trailing" constant="8" id="Y6v-Ut-Zqt"/>
+                        <constraint firstAttribute="trailing" secondItem="P4h-Dk-p5j" secondAttribute="trailing" constant="10" id="ZhV-Nf-orS"/>
+                        <constraint firstItem="g5q-eo-1kB" firstAttribute="leading" secondItem="4yN-bn-MXi" secondAttribute="leading" constant="6" id="Zki-QR-cNK"/>
+                        <constraint firstItem="nn0-jX-HLh" firstAttribute="centerY" secondItem="4yN-bn-MXi" secondAttribute="centerY" id="cVu-vl-RQX"/>
+                        <constraint firstItem="g5q-eo-1kB" firstAttribute="centerY" secondItem="4yN-bn-MXi" secondAttribute="centerY" id="dtc-mL-POh"/>
+                        <constraint firstItem="g5q-eo-1kB" firstAttribute="width" secondItem="50a-PG-S9N" secondAttribute="width" id="fCT-2C-qbf"/>
+                        <constraint firstItem="5dM-1A-Zst" firstAttribute="leading" secondItem="4yN-bn-MXi" secondAttribute="leading" constant="6" id="gW1-5Y-4qA"/>
+                        <constraint firstItem="nn0-jX-HLh" firstAttribute="leading" secondItem="UHO-Cy-Bbw" secondAttribute="trailing" constant="9" id="nrm-sN-HmM"/>
+                        <constraint firstItem="UHO-Cy-Bbw" firstAttribute="leading" secondItem="TRh-r7-rDY" secondAttribute="trailing" constant="8" id="put-z2-6HT"/>
+                        <constraint firstItem="g5q-eo-1kB" firstAttribute="width" secondItem="P4h-Dk-p5j" secondAttribute="width" id="wfZ-I5-LGS"/>
+                        <constraint firstItem="TRh-r7-rDY" firstAttribute="leading" secondItem="5dM-1A-Zst" secondAttribute="trailing" constant="10" id="yTI-Rh-FmE"/>
+                        <constraint firstItem="NI0-fh-4v8" firstAttribute="centerY" secondItem="4yN-bn-MXi" secondAttribute="centerY" id="yUx-TC-BBG"/>
+                        <constraint firstItem="5dM-1A-Zst" firstAttribute="centerY" secondItem="4yN-bn-MXi" secondAttribute="centerY" id="zIM-Ld-Nb5"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8TM-zw-Deo" userLabel="FrameBar Container View">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="55"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="55" id="RO9-7i-pj3"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xeb-Pr-3jx" userLabel="Achievement">
+                    <rect key="frame" x="2" y="2" width="44" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="OBv-Le-sNB"/>
+                        <constraint firstAttribute="width" constant="44" id="Pmj-sS-7ob"/>
+                    </constraints>
+                    <state key="normal" image="AchievementsButtonDark.png">
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <state key="highlighted" image="AchievementsButtonHighlight.png"/>
+                    <connections>
+                        <action selector="achievementsButtonAction" destination="-1" eventType="touchUpInside" id="SHY-MA-vvw"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pee-KF-7eC" userLabel="BallSpeed">
+                    <rect key="frame" x="311" y="0.0" width="55" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="Z7n-qy-ZRB"/>
+                        <constraint firstAttribute="width" constant="55" id="ge3-Zc-TM3"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="BallSpeedButtonDark.png">
+                        <color key="titleColor" red="0.14901960780000001" green="0.14901960780000001" blue="0.14901960780000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <state key="selected" backgroundImage="BallSpeedButtonHighlight.png">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="speedButtonAction" destination="-1" eventType="touchUpInside" id="ibv-b1-FYv"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ysK-lv-YFR">
+                    <rect key="frame" x="273" y="-200" width="102" height="200"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="pee-KF-7eC" firstAttribute="top" secondItem="xnP-vs-ZJg" secondAttribute="top" id="3Fj-ub-ois"/>
+                <constraint firstItem="xeb-Pr-3jx" firstAttribute="leading" secondItem="xnP-vs-ZJg" secondAttribute="leading" constant="2" id="F2F-xg-4Nn"/>
+                <constraint firstItem="9iM-wq-kz8" firstAttribute="width" secondItem="xnP-vs-ZJg" secondAttribute="width" id="KKu-da-3MG"/>
+                <constraint firstItem="8TM-zw-Deo" firstAttribute="leading" secondItem="xnP-vs-ZJg" secondAttribute="leading" id="Mgs-dx-JrY"/>
+                <constraint firstItem="4yN-bn-MXi" firstAttribute="leading" secondItem="xnP-vs-ZJg" secondAttribute="leading" id="R4m-1Q-GlK"/>
+                <constraint firstItem="9iM-wq-kz8" firstAttribute="height" secondItem="xnP-vs-ZJg" secondAttribute="height" constant="-100" id="YE1-wq-1br"/>
+                <constraint firstItem="9iM-wq-kz8" firstAttribute="top" secondItem="xnP-vs-ZJg" secondAttribute="top" id="Ync-Ia-jPc"/>
+                <constraint firstItem="4yN-bn-MXi" firstAttribute="top" secondItem="xnP-vs-ZJg" secondAttribute="top" constant="45" id="bqh-1C-q2D"/>
+                <constraint firstItem="8TM-zw-Deo" firstAttribute="width" secondItem="xnP-vs-ZJg" secondAttribute="width" id="eLr-AG-Hog"/>
+                <constraint firstItem="9iM-wq-kz8" firstAttribute="leading" secondItem="xnP-vs-ZJg" secondAttribute="leading" id="f0I-Rg-lMl"/>
+                <constraint firstItem="4yN-bn-MXi" firstAttribute="width" secondItem="xnP-vs-ZJg" secondAttribute="width" id="lMU-E0-9zB"/>
+                <constraint firstItem="xeb-Pr-3jx" firstAttribute="top" secondItem="xnP-vs-ZJg" secondAttribute="top" constant="2" id="lU9-h4-rcP"/>
+                <constraint firstAttribute="trailing" secondItem="pee-KF-7eC" secondAttribute="trailing" constant="9" id="qgP-RY-3QQ"/>
+                <constraint firstItem="8TM-zw-Deo" firstAttribute="top" secondItem="xnP-vs-ZJg" secondAttribute="top" id="wKa-1u-brd"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="234.5" y="107"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="AchievementsButtonDark.png" width="88" height="88"/>
+        <image name="AchievementsButtonHighlight.png" width="88" height="88"/>
+        <image name="BallSpeedButtonDark.png" width="110" height="88"/>
+        <image name="BallSpeedButtonHighlight.png" width="110" height="88"/>
+        <image name="FoulButtonDark.png" width="124" height="84"/>
+        <image name="FoulButtonLight.png" width="124" height="84"/>
+        <image name="GutterButtonDark.png" width="124" height="84"/>
+        <image name="GutterButtonLight.png" width="124" height="84"/>
+        <image name="MissButtonDark.png" width="124" height="84"/>
+        <image name="MissButtonHighlight.png" width="124" height="84"/>
+        <image name="SpareButtonDark.png" width="124" height="84"/>
+        <image name="SpareButtonLight.png" width="124" height="84"/>
+        <image name="SplitButtonDark.png" width="124" height="84"/>
+        <image name="SplitButtonLight.png" width="124" height="84"/>
+        <image name="StrikeButtonDark.png" width="124" height="84"/>
+        <image name="StrikeButtonLight.png" width="124" height="84"/>
+    </resources>
+</document>
